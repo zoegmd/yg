@@ -1,0 +1,64 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gdassets.vercel.app"
+        },
+        {
+          "type": "path",
+          "value": "/:path*"
+        }
+      ],
+      "destination": "https://gdassets.vercel.app/notfound.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gmdassets.vercel.app"
+        },
+        {
+          "type": "path",
+          "value": "/:path*"
+        }
+      ],
+      "destination": "https://gdassets.vercel.app/notfound.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "geometrydashassets.vercel.app"
+        },
+        {
+          "type": "path",
+          "value": "/:path*"
+        }
+      ],
+      "destination": "https://gdassets.vercel.app/notfound.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gdassetfinder.vercel.app"
+        },
+        {
+          "type": "path",
+          "value": "/:path*"
+        }
+      ],
+      "destination": "https://gdassets.vercel.app/notfound.html",
+      "permanent": true
+    }
+  ]
+}
