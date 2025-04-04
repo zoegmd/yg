@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GD Assets</title>
+    <link rel="icon" href="https://gdbrowser.com/assets/coin.png" type="image/png">
+    <script>
+        function getRandomAsset() {
+            const assets = [
+                "twitter.png", "youtube.png", "discord.png", "twitch.png",
+                "facebook.png", "instagram.png", "reddit.png"
+            ];
+            const randomAsset = assets[Math.floor(Math.random() * assets.length)];
+            window.location.href = `https://gdbrowser.com/assets/${randomAsset}`;
+        }
+    </script>
+    <style>
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .button-group a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .difficulty-group {
+            display: flex;
+            gap: 10px;
+        }
+        .difficulty-group a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: grey;
+        }
+
+        .title-image {
+            max-width: 40%; /* Set to a smaller size */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Image Title -->
+    <img src="https://coolcubegame.vercel.app/gdassets.png" alt="GD ASSETS" class="title-image">
+
+    <p>Get all the GD assets! (Credits to: GD Colon)</p>
+
+    <!-- Smaller Text Below Title -->
+    <p class="small-text">Everything on this site is powered by <a href="https://gdbrowser.com" target="_blank">https://gdbrowser.com</a>!</p>
+    
+    <p><a href="#" onclick="getRandomAsset()" style="color: blue; text-decoration: underline;">Random Asset</a></p>
+
+    <!-- Buttons Section -->
+    <h2>Buttons</h2>
+    <div class="button-group">
+        <a href="https://gdbrowser.com/assets/category-daily.png?v=1">Daily</a>
+        <a href="https://gdbrowser.com/assets/category-weekly.png?v=1">Weekly</a>
+        <a href="https://gdbrowser.com/assets/category-search.png?v=1">Search</a>
+        <a href="https://gdbrowser.com/assets/category-event.png?v=1">Event</a>
+        <a href="https://gdbrowser.com/assets/category-featured.png?v=1">Featured</a>
+        <a href="https://gdbrowser.com/assets/category-saved.png?v=1">Saved</a>
+        <a href="https://gdbrowser.com/assets/category-scores.png?v=1">Scores</a>
+        <a href="https://gdbrowser.com/assets/category-gauntlets.png?v=1">Gauntlets</a>
+        <a href="https://gdbrowser.com/assets/category-lists.png?v=1">Lists</a>
+    </div>
+
+    <!-- Difficulties Section (Demon) -->
+    <h2>Difficulties (Demon)</h2>
+    <div class="difficulty-group">
+        <a href="https://gdbrowser.com/assets/difficulties/demon-extreme.png?">Demon Extreme</a>
+        <a href="https://gdbrowser.com/assets/difficulties/demon-easy.png?">Demon Easy</a>
+        <a href="https://gdbrowser.com/assets/difficulties/demon-medium.png?">Demon Medium</a>
+        <a href="https://gdbrowser.com/assets/difficulties/demon-hard.png?">Demon Hard</a>
+        <a href="https://gdbrowser.com/assets/difficulties/demon-insane.png?">Demon Insane</a>
+    </div>
+
+    <!-- Difficulties Section (Regular) -->
+    <h2>Difficulties (Regular)</h2>
+    <div class="difficulty-group">
+        <a href="https://gdbrowser.com/assets/difficulties/easy.png?">Easy</a>
+        <a href="https://gdbrowser.com/assets/difficulties/normal.png?">Normal</a>
+        <a href="https://gdbrowser.com/assets/difficulties/hard.png?">Hard</a>
+        <a href="https://gdbrowser.com/assets/difficulties/harder.png?">Harder</a>
+        <a href="https://gdbrowser.com/assets/difficulties/insane.png?">Insane</a>
+        <a href="https://gdbrowser.com/assets/difficulties/unrated.png?">Unrated</a>
+    </div>
+
+    <!-- Searching Section -->
+    <h2>Searching</h2>
+    <div class="difficulty-group">
+        <a href="https://gdbrowser.com/assets/btn-trending.png">Trending</a>
+        <a href="https://gdbrowser.com/assets/btn-recent.png">Recent</a>
+        <a href="https://gdbrowser.com/assets/btn-sent.png">Sent</a>
+        <a href="https://gdbrowser.com/assets/btn-magic.png">Magic</a>
+        <a href="https://gdbrowser.com/assets/btn-awarded.png">Awarded</a>
+        <a href="https://gdbrowser.com/assets/btn-followed.png">Followed</a>
+        <a href="https://gdbrowser.com/assets/btn-liked.png">Liked</a>
+    </div>
+</body>
+</html>
