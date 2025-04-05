@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GD Assets</title>
+    <title>Geometry Dash Assets</title>
     <link rel="icon" href="https://gdbrowser.com/assets/coin.png" type="image/png">
     <script>
         function getRandomAsset() {
@@ -14,32 +14,85 @@
         }
     </script>
     <style>
-        .button-group {
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #333, #000);
+            color: white;
             display: flex;
-            gap: 10px;
-        }
-        .button-group a {
-            color: blue;
-            text-decoration: underline;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
         }
 
-        .difficulty-group {
-            display: flex;
-            gap: 10px;
-        }
-        .difficulty-group a {
-            color: blue;
-            text-decoration: underline;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 999px;
+            background: linear-gradient(to right, #666, #333);
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
         }
 
-        .small-text {
-            font-size: 12px;
-            color: grey;
+        a:hover {
+            background: linear-gradient(to right, #888, #444);
+            transform: scale(1.05);
+        }
+
+        .button-group, .difficulty-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
         }
 
         .title-image {
-            max-width: 40%; /* Set to a smaller size */
+            max-width: 40%;
             height: auto;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+        }
+
+        .random-link {
+            margin: 20px;
+        }
+
+        .zoe-pill {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 8px 16px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(270deg, 
+                red, orange, yellow, green, cyan, blue, violet, red);
+            background-size: 400% 400%;
+            border-radius: 999px;
+            animation: rainbowShift 8s ease infinite;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes rainbowShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
     </style>
 </head>
@@ -49,10 +102,7 @@
 
     <p>Get all the GD assets! (Credits to: GD Colon)</p>
 
-    <!-- Smaller Text Below Title -->
-    <p class="small-text">Everything on this site is powered by <a href="https://gdbrowser.com" target="_blank">https://gdbrowser.com</a>!</p>
-    
-    <p><a href="#" onclick="getRandomAsset()" style="color: blue; text-decoration: underline;">Random Asset</a></p>
+    <p class="random-link"><a href="#" onclick="getRandomAsset()">Random Asset</a></p>
 
     <!-- Buttons Section -->
     <h2>Buttons</h2>
@@ -86,7 +136,7 @@
         <a href="https://gdbrowser.com/assets/difficulties/hard.png?">Hard</a>
         <a href="https://gdbrowser.com/assets/difficulties/harder.png?">Harder</a>
         <a href="https://gdbrowser.com/assets/difficulties/insane.png?">Insane</a>
-        <a href="https://gdbrowser.com/assets/difficulties/unrated.png?">Unrated</a>
+        <a href="https://gdbrowser.com/assets/difficulties/unrated.png?">NA</a>
     </div>
 
     <!-- Searching Section -->
@@ -98,7 +148,11 @@
         <a href="https://gdbrowser.com/assets/btn-magic.png">Magic</a>
         <a href="https://gdbrowser.com/assets/btn-awarded.png">Awarded</a>
         <a href="https://gdbrowser.com/assets/btn-followed.png">Followed</a>
-        <a href="https://gdbrowser.com/assets/btn-liked.png">Liked</a>
+        <a href="https://gdbrowser.com/assets/btn-liked.png">Most Liked</a>
     </div>
+
+    <!-- Rainbow pill footer -->
+    <div class="zoe-pill">built by zoe, images hosted on gdbrowser.</div>
 </body>
 </html>
+
